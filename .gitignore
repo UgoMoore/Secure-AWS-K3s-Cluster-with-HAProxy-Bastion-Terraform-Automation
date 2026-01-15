@@ -1,0 +1,45 @@
+# ===========================
+# 🔐 SECURITY / SECRETS
+# ===========================
+*.pem
+*.key
+*.env
+*.secret
+*.secrets
+*.tfvars
+*.auto.tfvars
+*.json
+
+# AWS credentials
+.aws/
+credentials
+config
+
+# kubeconfig
+kubeconfig
+*.kubeconfig
+.kube/
+
+# ===========================
+# 🏗️ TERRAFORM
+# ===========================
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfplan
+override.tf
+override.tf.json
+.terraform.lock.hcl
+
+# ===========================
+# 📝 LOGS
+# ===========================
+*.log
+
+# ===========================
+# 💻 OS / EDITOR
+# ===========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
