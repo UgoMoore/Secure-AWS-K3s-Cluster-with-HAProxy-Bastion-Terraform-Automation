@@ -1,8 +1,3 @@
-variable "ec2_instance_profile_name" {
-  description = "IAM Instance Profile Name for EC2"
-  type        = string
-}
-
 variable "vpc_id" {
   description = "VPC ID"
   type        = string
@@ -43,7 +38,4 @@ variable "ssh_private_key_path" {
   type        = string
 }
 
-variable "iam_instance_profile" {
-  description = "IAM instance profile for EC2"
-  type        = string
-}
+
