@@ -48,9 +48,9 @@ IAM was fully provisioned and validated in AWS.
 
 ### Evidence
 
-- `01-iam-role.png`
-- `02-iam-policy.png`
-- `03-iam-instance-profile.png`
+- `01-iam-k3s-role-overview`
+- `02-iam-k3s-role-trust-policy`
+- `03-iam-k3s-policy-attachment`
 
 ---
 
