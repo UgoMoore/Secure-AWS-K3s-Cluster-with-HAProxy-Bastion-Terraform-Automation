@@ -1,3 +1,11 @@
+#############################################
+# Root Terraform Configuration
+# Secure AWS K3s Cluster with HAProxy Bastion
+#############################################
+
+# =========================
+# VPC Module
+# =========================
 module "vpc" {
   source = "./modules/01-vpc"
 
@@ -8,20 +16,25 @@ module "vpc" {
   availability_zone   = "us-east-1a"
 }
 
+# =========================
+# K3s + HAProxy Bastion Module
+# =========================
 module "k3s_haproxy" {
   source = "./modules/02-k3s-haproxy"
 
+  # Networking
   vpc_id            = module.vpc.vpc_id
   public_subnet_id  = module.vpc.public_subnet_id
   private_subnet_id = module.vpc.private_subnet_id
 
-  ami_id                = "ami-020cba7c55df1f615"
-  key_name              = "my-aws-key"
-  haproxy_instance_type = "t2.micro"
-  k3s_instance_type     = "t2.medium"
+  # EC2 / AMI
+  ami_id   = "ami-020cba7c55df1f615"
+  key_name = "my-aws-key"
 
-  ssh_private_key_path  = "~/.ssh/my-aws-key.pem"
+  # Instance sizing (UPDATED – billing-safe)
+  haproxy_instance_type = "t3.small"
+  k3s_instance_type     = "t3.medium"
+
+  # SSH
+  ssh_private_key_path = "~/.ssh/my-aws-key.pem"
 }
-
- 
-  

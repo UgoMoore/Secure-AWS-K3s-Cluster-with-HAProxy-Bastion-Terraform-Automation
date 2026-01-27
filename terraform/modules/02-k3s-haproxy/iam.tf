@@ -28,7 +28,7 @@ resource "aws_iam_role" "ec2_role" {
 resource "aws_iam_policy" "ec2_policy" {
   name        = "k3s_ec2_policy"
   description = "Allows EC2 to write logs to CloudWatch and access S3 for K3s artifacts"
-  
+
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
