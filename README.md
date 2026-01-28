@@ -141,7 +141,7 @@ A custom VPC was created to ensure full control over networking.
 
 ### Subnets ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/08ii-subnets.jpg)
 
-*Public and private subnets defined across the same availability zone, enforcing workload isolation and security boundaries.
+*Public and private subnets defined across the same availability zone, enforcing workload isolation and security boundaries.*
 
 ---
 
@@ -163,7 +163,7 @@ Security was enforced through **separate, least-privilege security groups**.
 
 ---
 
-### 9️⃣ HAProxy Security Group ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/09-haproxy-security-group.png.jpg) 
+### 9️⃣ HAProxy Security Group ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/09-haproxy-security-group.jpg) 
 
 *Security group rules restricting ingress to required management and API ports, following bastion-host best practices.*
 
@@ -185,7 +185,7 @@ This is intentionally documented to avoid false claims and to maintain audit int
 
 ---
 
-### 1️1️ CloudWatch Log Groups ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/11-cloudwatch-log-groups.png.jpg) 
+### 1️1️ CloudWatch Log Groups ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/11-cloudwatch-log-groups.jpg) 
 
 *CloudWatch logging boundary intentionally documented, showing observability planning despite limited execution.*
 
