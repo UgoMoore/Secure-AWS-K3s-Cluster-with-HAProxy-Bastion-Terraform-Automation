@@ -24,8 +24,7 @@ The infrastructure reached full architectural completeness. Final execution of t
 **High-level flow:**
 
 ```
-Internet → HAProxy Bastion (Public Subnet)
-          → K3s Server (Private Subnet)
+Internet → HAProxy Bastion (Public Subnet) → K3s Server (Private Subnet)
 ```
 
 ---
@@ -37,7 +36,6 @@ IAM was fully provisioned and validated in AWS.
 ### Components
 
 - **IAM Role:** `k3s_ec2_role`
-- **Instance Profile:** `k3s_ec2_instance_profile`
 - **Customer-Managed Policy:** `k3s_ec2_policy`
 
 ### Purpose
@@ -62,7 +60,7 @@ IAM was fully provisioned and validated in AWS.
 
 ---
 
-### 3️⃣ IAM Policy Attachment ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/03-iam-k3s-policy-attachment.jpg) 
+### 3️⃣ IAM Policy Attachment ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/03-iam-k3s-policy-attachment.jp3️⃣ 
 
 *Customer-managed IAM policy attached to the role, enforcing scoped permissions required for cluster operations.*
 
@@ -99,7 +97,7 @@ IAM was fully provisioned and validated in AWS.
 
 ---
 
-### 5 HAProxy Networking ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/05-ec2-haproxy-networking.jpg) 
+### 5️⃣ HAProxy Networking ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/05-ec2-haproxy-networking.jpg) 
 
 *Instance networking details showing public subnet placement and assigned public IP for controlled external access.*
 
@@ -139,9 +137,9 @@ A custom VPC was created to ensure full control over networking.
 
 ---
 
-### 8 Subnets ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/08i-subnets.jpg) 
+### 8️⃣ Subnets ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/08i-subnets.jpg) 
 
-              ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/08ii-subnets.jpg)
+![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/08ii-subnets.jpg)
 
 *Public and private subnets defined across the same availability zone, enforcing workload isolation and security boundaries.
 
@@ -171,7 +169,7 @@ Security was enforced through **separate, least-privilege security groups**.
 
 ---
 
-### 1️0 K3s Security Group  ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/10-k3s-security-group.jpg) 
+### 1️0️⃣ K3s Security Group  ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/10-k3s-security-group.jpg) 
 
 *Predefined cluster security rules illustrating readiness for K3s node communication, even though execution was constrained.*
 
@@ -187,7 +185,7 @@ This is intentionally documented to avoid false claims and to maintain audit int
 
 ---
 
-### 1️1 CloudWatch Log Groups ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/11-cloudwatch-log-groups.png.jpg) 
+### 1️1️ CloudWatch Log Groups ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/11-cloudwatch-log-groups.png.jpg) 
 
 *CloudWatch logging boundary intentionally documented, showing observability planning despite limited execution.*
 
@@ -222,13 +220,13 @@ terraform/
 
 ---
 
-### 1️⃣2 Terraform Modules Tree ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/12-terraform-modules-tree.jpg) 
+### 1️2️⃣ Terraform Modules Tree ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/12-terraform-modules-tree.jpg) 
 
 *Modular Terraform structure separating VPC and compute concerns, reinforcing reusability and clean IaC design.*
 
 ---
 
-### 1️⃣3 Root Terraform Orchestration ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/13-terraform-main-tf.jpg) 
+### 1️3️⃣ Root Terraform Orchestration ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/13-terraform-main-tf.jpg) 
 
 *Root module wiring all submodules together, demonstrating full infrastructure orchestration and variable flow.*
 
@@ -277,4 +275,6 @@ terraform destroy -auto-approve
 **Status:** Infrastructure-complete, execution-constrained by environment & provider limitations.
 
 This project demonstrates strong cloud architecture fundamentals, security awareness, and professional infrastructure documentation.
+
+---
 
