@@ -60,7 +60,7 @@ IAM was fully provisioned and validated in AWS.
 
 ---
 
-### 3️⃣ IAM Policy Attachment ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/03-iam-k3s-policy-attachment.jp3️⃣ 
+### 3️⃣ IAM Policy Attachment ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/03-iam-k3s-policy-attachment.jpg)
 
 *Customer-managed IAM policy attached to the role, enforcing scoped permissions required for cluster operations.*
 
@@ -137,9 +137,9 @@ A custom VPC was created to ensure full control over networking.
 
 ---
 
-### 8️⃣ Subnets ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/08i-subnets.jpg) 
+### 8️⃣ Subnets Resource map ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/08i-subnets.jpg) 
 
-![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/08ii-subnets.jpg)
+### Subnets ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/08ii-subnets.jpg)
 
 *Public and private subnets defined across the same availability zone, enforcing workload isolation and security boundaries.
 
@@ -274,7 +274,7 @@ terraform destroy -auto-approve
 
 **Status:** Infrastructure-complete, execution-constrained by environment & provider limitations.
 
-This project demonstrates strong cloud architecture fundamentals, security awareness, and professional infrastructure documentation.
+> This project demonstrates strong cloud architecture fundamentals, security awareness, and professional infrastructure documentation.
 
 ---
 
