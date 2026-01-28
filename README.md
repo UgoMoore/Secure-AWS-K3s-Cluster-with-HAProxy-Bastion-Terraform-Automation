@@ -139,6 +139,8 @@ A custom VPC was created to ensure full control over networking.
 
 ### 8️⃣ Subnets Resource map ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/08i-subnets.jpg) 
 
+---
+
 ### Subnets ![Interface Selection](https://github.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/blob/main/evidence/08ii-subnets.jpg)
 
 *Public and private subnets defined across the same availability zone, enforcing workload isolation and security boundaries.*
