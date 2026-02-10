@@ -6,7 +6,7 @@ A security-focused Infrastructure-as-Code project where I deployed a hardened AW
 ✅ Network segmentation with controlled ingress boundaries  
 ✅ Evidence-backed documentation with screenshots and verification steps  
 
-📌 **Architecture Overview (Preview)**  
+**Architecture Overview (Preview)**
 ![Project Architecture Thumbnail](https://raw.githubusercontent.com/UgoMoore/Secure-AWS-K3s-Cluster-with-HAProxy-Bastion-Terraform-Automation/main/evidence/00-linkedin-thumbnail.png)
 
 ---
