@@ -1,4 +1,13 @@
-# Secure AWS K3s Cluster with HAProxy Bastion — Terraform Automation
+# Secure AWS K3s Cluster with HAProxy Bastion (Terraform Automation)
+
+A security-focused Infrastructure-as-Code project where I deployed a hardened AWS-based K3s Kubernetes environment using Terraform, featuring a HAProxy bastion gateway, private subnet isolation, CloudWatch logging, and IAM least-privilege access.
+
+✅ Fully automated provisioning + teardown via Terraform (no manual cleanup)  
+✅ Network segmentation with controlled ingress boundaries  
+✅ Evidence-backed documentation with screenshots and verification steps  
+
+📌 **Architecture Overview (Preview)**  
+![Project Architecture Thumbnail](./evidence/00-linkedin-thumbnail.png)
 
 ---
 
